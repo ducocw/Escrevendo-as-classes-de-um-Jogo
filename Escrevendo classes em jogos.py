@@ -15,25 +15,24 @@ class Heroi:
         tipo = tipo
 
    
-if tipo == 1:
-    maestria = "magia"
-    classe = "Mago"
-
+    if tipo == 1:
+        maestria = "magia"
+        classe = "Mago"
+        
+    elif tipo == 2:
+        maestria = "espada"
+        classe = "Guerreiro"
     
-elif tipo == 2:
-    maestria = "espada"
-    classe = "Guerreiro"
-        
-elif tipo == 3:
-    maestria = "artes marciais"
-    classe = "Monge"
+    elif tipo == 3:
+        maestria = "artes marciais"
+        classe = "Monge"
 
-elif tipo == 4:
-    maestria = "shuriken"
-    classe = "Ninja"
+    elif tipo == 4:
+        maestria = "shuriken"
+        classe = "Ninja"
         
-else:
-    maestria = "Nenhuma"
-    classe = "Ninguém"
-
-print(f"O {classe} tem melhor habilidade em {maestria}.")
+    else:
+        maestria = "Nenhuma"
+        classe = "Ninguém"
+    
+    print(f"O {classe} tem melhor habilidade em {maestria}.")
